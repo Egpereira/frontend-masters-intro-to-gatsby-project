@@ -1,9 +1,17 @@
 import * as React from 'react'
+import { Link } from 'gatsby'
+import { Layout } from '../components/layouts'
 
-export default function AboutPage() {
+const AboutPage = () => {
   return (
-    <main>
+    <Layout
+      title='About This Site'
+      description="More information about this site."
+    >
       <h1>About</h1>
-    </main>
+      <Link to='/'>Back to home</Link>
+    </Layout>
   )
 }
+
+export default AboutPage
